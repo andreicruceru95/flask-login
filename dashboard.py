@@ -13,7 +13,7 @@ import os
 
 dashboard = Blueprint('dashboard', __name__)
 
-from app import db, app
+from application import db, app
 from models import UpdateUserInfo
 
 #endregion

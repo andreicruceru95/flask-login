@@ -4,7 +4,7 @@ from wtforms import StringField, SubmitField, EmailField, SelectField, PasswordF
 from wtforms.validators import Length, Email, DataRequired, ValidationError, EqualTo, InputRequired
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from flask_login import UserMixin, current_user
-from app import db, app, login_manager
+from application import db, app, login_manager
 
 @login_manager.user_loader
 def load_user(user_id):

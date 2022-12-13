@@ -1,6 +1,6 @@
 from flask_mail import Message
 from flask import url_for
-from app import mail, app
+from application import mail, app
 
 def send_registration_email(user):
     token = user.get_reset_token(86400) # 24h

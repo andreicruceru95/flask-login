@@ -15,7 +15,7 @@ mail_settings = {
      }
 
 db = SQLAlchemy()
-app = Flask(__name__)
+application = app = Flask(__name__)
 
 
 user = os.getenv('DB_USER')
